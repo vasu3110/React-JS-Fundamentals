@@ -20,7 +20,7 @@ import Counter from './Counter';
 function App() {
   return (
     <>
-    <Message />
+    {/* <Message /> */}
     <Counter />
 
     {/* <Chai /> */}
