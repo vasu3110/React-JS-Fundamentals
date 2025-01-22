@@ -4,6 +4,8 @@ import Hello from './Hello';
 import Welcome from './Class_component';
 import Message from './Message';
 import Counter from './Counter';
+import FunctionClick from './FunctionClick';
+import ClassClick from './ClassClick';
 //This is a React Component which is exported to the index.js file
 //App.js contains 4 child components namely the Header,sidenav,main content,footer
 //Components describe a part of the UI
@@ -21,22 +23,24 @@ function App() {
   return (
     <>
     {/* <Message /> */}
-    <Counter />
+    {/* <Counter /> */}
+    <FunctionClick />
+    <ClassClick />
 
     {/* <Chai /> */}
     {/* <Greet name="Bruce" heroName="Batman">
-      <p>This is a child props</p>
-    </Greet>
-    <Greet name="Clark" heroName="Superman">
+      {/* <p>This is a child props</p> */}
+    {/* </Greet> */} 
+    {/* <Greet name="Clark" heroName="Superman">
       <button>Action</button>
     </Greet>
     <Greet name="Diana" heroName="Wonder Women"/> */}
     {/* <Hello/> */}
     {/* <h1>App Component:Chai Aur react</h1> */}
-{/* 
-    <Welcome name="Bruce" heroName="Batman"/>
+ 
+    {/* <Welcome name="Bruce" heroName="Batman"/>
     <Welcome name="Clark" heroName="SuperMan"/>
-    <Welcome name="Diana" heroName="Wonder Women"/> */}
+    <Welcome name="Diana" heroName="Wonder Women"/>  */}
 
     </>
   );
