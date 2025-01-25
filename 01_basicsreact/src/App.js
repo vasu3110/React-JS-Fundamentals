@@ -6,6 +6,9 @@ import Message from './Message';
 import Counter from './Counter';
 import FunctionClick from './FunctionClick';
 import ClassClick from './ClassClick';
+import EventBind from './EventBind';
+import ParentComponent from './ParentComponent';
+import UserGreetings from './UserGreetings';
 //This is a React Component which is exported to the index.js file
 //App.js contains 4 child components namely the Header,sidenav,main content,footer
 //Components describe a part of the UI
@@ -22,11 +25,19 @@ import ClassClick from './ClassClick';
 function App() {
   return (
     <>
+    <UserGreetings />
+
+
+    {/* <ParentComponent /> */}
+    {/* <EventBind /> */}
+  
+
+
+
     {/* <Message /> */}
     {/* <Counter /> */}
-    <FunctionClick />
-    <ClassClick />
-
+    {/* <FunctionClick />
+    <ClassClick /> */}
     {/* <Chai /> */}
     {/* <Greet name="Bruce" heroName="Batman">
       {/* <p>This is a child props</p> */}
