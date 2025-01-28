@@ -9,6 +9,13 @@ import ClassClick from './ClassClick';
 import EventBind from './EventBind';
 import ParentComponent from './ParentComponent';
 import UserGreetings from './UserGreetings';
+import Namelist from './Namelist';
+import Inline from './Inline';
+import './appStyles.css'
+import styles from './appStyles.module.css'
+import Form from './Form';
+// import Stylesheet from './Stylesheet';
+
 //This is a React Component which is exported to the index.js file
 //App.js contains 4 child components namely the Header,sidenav,main content,footer
 //Components describe a part of the UI
@@ -25,7 +32,18 @@ import UserGreetings from './UserGreetings';
 function App() {
   return (
     <>
-    <UserGreetings />
+
+    <Form />
+    {/* <h1 className='error'>Error</h1> */}
+    {/* Advantage of using css in modules is that classes are locally scoped by default */}
+    {/* <h1 className={styles.success}>Success</h1> */}
+
+    {/* This will also inherit the css from parent app.js component if css is not comming from module file */}
+    {/* <Inline /> */}
+    {/* <Stylesheet /> */}
+    {/* <Stylesheet primary={true}/> */}
+    {/* <Namelist /> */}
+    {/* <UserGreetings /> */}
 
 
     {/* <ParentComponent /> */}
