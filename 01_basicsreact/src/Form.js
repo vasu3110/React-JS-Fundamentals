@@ -6,7 +6,8 @@ class Form extends Component {
     
       this.state = {
          username:'',
-         comments:''
+         comments:'',
+         topic:'react'
       }
     }
     handleUsernameChange=(event)=>{
@@ -16,23 +17,42 @@ class Form extends Component {
     }
     handleCommentsChange=(event)=>{
         this.setState({
-            username:event.target.value
+            comments:event.target.value
         })
     }
+    handleTopicChange=(event)=>{
+      this.setState({
+        topic:event.target.value
+      })
+    }
+    handleSubmit=(event)=>{
+      alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
+      event.preventDefault()
+    }
     render() {
+    const {username,comments,topic}=this.state;
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div>
             <label>Username</label>
             <input 
             type='text' 
-            value={this.state.username} 
+            value={username} 
             onChange={this.handleUsernameChange}/>
         </div>
         <div>
             <label>Comments</label>
-            <textarea value={this.state.comments} onChange={this.handleCommentsChange} />
+            <textarea value={comments} onChange={this.handleCommentsChange} />
         </div>
+        <div>
+          <label>Topic</label>
+          <select value={topic} onChange={this.handleTopicChange}>
+              <option>React</option>
+              <option>Angular</option>
+              <option>Vue</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
       </form>
     )
   }

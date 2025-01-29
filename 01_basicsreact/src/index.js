@@ -10,8 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //React Also creates its own DOM called virtual DOM.Compares the virtual and actual DOM and then make changes to actual DOM based only on differences
 
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <App />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 

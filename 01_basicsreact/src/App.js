@@ -14,7 +14,9 @@ import Inline from './Inline';
 import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './Form';
+import LifecycleA from './LifecycleA';
 // import Stylesheet from './Stylesheet';
+import PureComp from './PureComp';
 
 //This is a React Component which is exported to the index.js file
 //App.js contains 4 child components namely the Header,sidenav,main content,footer
@@ -33,7 +35,9 @@ function App() {
   return (
     <>
 
-    <Form />
+    <PureComp />
+    {/* <LifecycleA /> */}
+    {/* <Form /> */}
     {/* <h1 className='error'>Error</h1> */}
     {/* Advantage of using css in modules is that classes are locally scoped by default */}
     {/* <h1 className={styles.success}>Success</h1> */}
