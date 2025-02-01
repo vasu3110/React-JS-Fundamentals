@@ -16,7 +16,11 @@ import styles from './appStyles.module.css'
 import Form from './Form';
 import LifecycleA from './LifecycleA';
 // import Stylesheet from './Stylesheet';
+import Fragment from './Fragment';
+import Table from './Table';
 import PureComp from './PureComp';
+import ParentComp from './ParentComp';
+import RefsDemo from './RefsDemo';
 
 //This is a React Component which is exported to the index.js file
 //App.js contains 4 child components namely the Header,sidenav,main content,footer
@@ -34,8 +38,11 @@ import PureComp from './PureComp';
 function App() {
   return (
     <>
+    <RefsDemo />
 
-    <PureComp />
+    {/* <Table /> */}
+    {/* <Fragment /> */}
+    {/* <ParentComp /> */}
     {/* <LifecycleA /> */}
     {/* <Form /> */}
     {/* <h1 className='error'>Error</h1> */}
