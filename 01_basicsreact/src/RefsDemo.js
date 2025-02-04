@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 //We can access a DOM node directly through react using refs
 //We can create a ref using createRef method or using callback ref method
 
-export class RefsDemo extends Component {
+class RefsDemo extends Component {
     constructor(props) {
       super(props)
       this.inputRef=React.createRef();

@@ -21,6 +21,7 @@ import Table from './Table';
 import PureComp from './PureComp';
 import ParentComp from './ParentComp';
 import RefsDemo from './RefsDemo';
+import FocusInput from './FocusInput';
 
 //This is a React Component which is exported to the index.js file
 //App.js contains 4 child components namely the Header,sidenav,main content,footer
@@ -38,7 +39,8 @@ import RefsDemo from './RefsDemo';
 function App() {
   return (
     <>
-    <RefsDemo />
+    <FocusInput />
+    {/* <RefsDemo /> */}
 
     {/* <Table /> */}
     {/* <Fragment /> */}
